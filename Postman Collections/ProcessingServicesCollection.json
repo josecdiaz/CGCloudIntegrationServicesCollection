@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "Get API Version",
-			"_postman_id": "4504a904-41b7-44d0-847d-eedaae153569",
+			"id": "4504a904-41b7-44d0-847d-eedaae153569",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -23,7 +23,7 @@
 		},
 		{
 			"name": "Register a transaction ID",
-			"_postman_id": "60520635-ac7f-45c7-87b0-93b2640d6b1e",
+			"id": "60520635-ac7f-45c7-87b0-93b2640d6b1e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -36,7 +36,7 @@
 		},
 		{
 			"name": "Get a list of configured volume measure templates",
-			"_postman_id": "24e350cd-60a0-4276-a1e0-a631225ad101",
+			"id": "24e350cd-60a0-4276-a1e0-a631225ad101",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -49,7 +49,7 @@
 		},
 		{
 			"name": "Get a list of configured measure templates",
-			"_postman_id": "20bbc0d1-3887-4cb5-a5b6-2930c611836b",
+			"id": "20bbc0d1-3887-4cb5-a5b6-2930c611836b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -62,7 +62,7 @@
 		},
 		{
 			"name": "Get all registered users",
-			"_postman_id": "adb93bf4-8259-4e30-8c15-66356ddc4965",
+			"id": "adb93bf4-8259-4e30-8c15-66356ddc4965",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -75,7 +75,7 @@
 		},
 		{
 			"name": "Get user history",
-			"_postman_id": "00d92e8b-e611-46a3-8fd5-d7dd1f40a27c",
+			"id": "00d92e8b-e611-46a3-8fd5-d7dd1f40a27c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -106,7 +106,7 @@
 		},
 		{
 			"name": "Get products available",
-			"_postman_id": "ba1ca5e8-a8c0-44e6-8151-959a5c242729",
+			"id": "ba1ca5e8-a8c0-44e6-8151-959a5c242729",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -119,7 +119,7 @@
 		},
 		{
 			"name": "Get available tactics for a specified promotion",
-			"_postman_id": "2728d991-0960-481e-a4fd-653e400323f7",
+			"id": "2728d991-0960-481e-a4fd-653e400323f7",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -152,13 +152,22 @@
 		},
 		{
 			"name": "Send volumes of type integer by week on weekly basis",
-			"_postman_id": "2df548f2-44e1-4d0c-bd85-a1eb5ba7bff4",
+			"id": "2df548f2-44e1-4d0c-bd85-a1eb5ba7bff4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "{{endpoint}}/api/v1/volumes/weeks/week/integer?transaction=BSLFIRST",
 					"host": [
@@ -175,8 +184,7 @@
 					"query": [
 						{
 							"key": "transaction",
-							"value": "BSLFIRST",
-							"type": "text"
+							"value": "BSLFIRST"
 						}
 					]
 				}
@@ -185,7 +193,7 @@
 		},
 		{
 			"name": "Configure volume measures (Weekly or Daily)",
-			"_postman_id": "a41adfc3-d87b-4740-9437-841f64a4a45e",
+			"id": "a41adfc3-d87b-4740-9437-841f64a4a45e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -243,21 +251,20 @@
 	],
 	"variable": [
 		{
-			"id": "0a917cc8-c910-4349-be62-89efb2abe956",
+			"id": "97a6f392-72a1-4c66-a928-d0bdab86c256",
 			"key": "endpoint",
-			"value": "",
-			"type": "string"
+			"value": "https://rcg-integration.industries.sfdc-yfeipo.svc.sfdcfc.net"
 		},
 		{
-			"id": "30740458-dd68-49a1-ad25-f78aaec26843",
+			"id": "a70a7f29-1800-4303-bada-8c042b623d7c",
 			"key": "clientid",
-			"value": "",
+			"value": "3MVG9kBt168mda__rQ54ZBJatzbaZJFW2.iOXoQLO0jA.AZxTN1uhiMcg3tNhQePcDs7BzsKVQeP00qWcRwvZ",
 			"type": "string"
 		},
 		{
-			"id": "a48420f7-1aa0-43a2-815c-c9f69843fff2",
+			"id": "87d5c7c1-3ef0-4cdf-9b1d-9bf8dcad1ed6",
 			"key": "sfurl",
-			"value": "",
+			"value": "https://tpmrcgido238-20demo.my.salesforce.com",
 			"type": "string"
 		}
 	]
