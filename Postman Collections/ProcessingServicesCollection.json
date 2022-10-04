@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "a007ce90-f26b-4b3e-8cf6-8a06b9127e3a",
+		"name": "Consumer Goods Cloud API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get API Version",
+			"_postman_id": "4504a904-41b7-44d0-847d-eedaae153569",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{endpoint}}/api"
+			},
+			"response": []
+		},
+		{
+			"name": "Register a transaction ID",
+			"_postman_id": "60520635-ac7f-45c7-87b0-93b2640d6b1e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "{{endpoint}}/api/v1/transaction/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a list of configured volume measure templates",
+			"_postman_id": "24e350cd-60a0-4276-a1e0-a631225ad101",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{endpoint}}/api/v1/templates/volumemeasures"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a list of configured measure templates",
+			"_postman_id": "20bbc0d1-3887-4cb5-a5b6-2930c611836b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{endpoint}}/api/v1/templates/measures"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all registered users",
+			"_postman_id": "adb93bf4-8259-4e30-8c15-66356ddc4965",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{endpoint}}/api/v1/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get user history",
+			"_postman_id": "00d92e8b-e611-46a3-8fd5-d7dd1f40a27c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}/api/v1/users/450/history?limit=50",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"450",
+						"history"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get products available",
+			"_postman_id": "ba1ca5e8-a8c0-44e6-8151-959a5c242729",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{endpoint}}/api/v1/support/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Get available tactics for a specified promotion",
+			"_postman_id": "2728d991-0960-481e-a4fd-653e400323f7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}/api/v2/promotions/a2V4x000000SpQXEA0/aggregation/totals/list?salesorg=0001",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"promotions",
+						"a2V4x000000SpQXEA0",
+						"aggregation",
+						"totals",
+						"list"
+					],
+					"query": [
+						{
+							"key": "salesorg",
+							"value": "0001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send volumes of type integer by week on weekly basis",
+			"_postman_id": "2df548f2-44e1-4d0c-bd85-a1eb5ba7bff4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}/api/v1/volumes/weeks/week/integer?transaction=BSLFIRST",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"volumes",
+						"weeks",
+						"week",
+						"integer"
+					],
+					"query": [
+						{
+							"key": "transaction",
+							"value": "BSLFIRST",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Configure volume measures (Weekly or Daily)",
+			"_postman_id": "a41adfc3-d87b-4740-9437-841f64a4a45e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"volumemeasures\": [\n        {\n            \"code\": \"BSL\",\n            \"mode\": \"W\",\n            \"format\": \"I\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{endpoint}}/api/v1/templates/volumemeasures"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": {
+			"scope": "full",
+			"authUrl": "{{sfurl}}/services/oauth2/authorize",
+			"client_authentication": "body",
+			"clientId": "{{clientid}}",
+			"grant_type": "implicit",
+			"tokenName": "access_token",
+			"addTokenTo": "header"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "df97ea16-ee9a-430a-aaee-acebfd4d5a15",
+				"type": "text/javascript",
+				"exec": [
+					"// Specifying Postman as the client for Salesforce logs ",
+					"pm.request.headers.add({key: 'Sforce-Call-Options', value: 'client=postman' });"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "2e4fa896-0cb3-4b8d-aa65-653370fe8c60",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "0a917cc8-c910-4349-be62-89efb2abe956",
+			"key": "endpoint",
+			"value": "https://rcg-integration.industries.sfdc-yfeipo.svc.sfdcfc.net",
+			"type": "string"
+		},
+		{
+			"id": "30740458-dd68-49a1-ad25-f78aaec26843",
+			"key": "clientid",
+			"value": "3MVG9kBt168mda__rQ54ZBJatzbaZJFW2.iOXoQLO0jA.AZxTN1uhiMcg3tNhQePcDs7BzsKVQeP00qWcRwvZ",
+			"type": "string"
+		},
+		{
+			"id": "a48420f7-1aa0-43a2-815c-c9f69843fff2",
+			"key": "sfurl",
+			"value": "https://tpmrcgido238-20demo.my.salesforce.com",
+			"type": "string"
+		}
+	]
+}
