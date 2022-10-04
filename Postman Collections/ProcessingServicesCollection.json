@@ -237,7 +237,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Get status for a transaction ID",
 			"id": "0ca2e3d6-1e9b-49d4-b644-3d0667ce065b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -286,18 +286,18 @@
 	],
 	"variable": [
 		{
-			"id": "a39b5dab-3790-4cb6-a9ff-15eb30c44b20",
+			"id": "159f8160-6124-4250-a659-76a341e829cf",
 			"key": "endpoint",
 			"value": "https://rcg-integration.industries.sfdc-yfeipo.svc.sfdcfc.net"
 		},
 		{
-			"id": "f3507563-a3a5-4665-90bb-369ef1c7be4d",
+			"id": "4f15d476-e85e-4b5f-9e65-a6d2633fb2d2",
 			"key": "clientid",
 			"value": "3MVG9kBt168mda__rQ54ZBJatzbaZJFW2.iOXoQLO0jA.AZxTN1uhiMcg3tNhQePcDs7BzsKVQeP00qWcRwvZ",
 			"type": "string"
 		},
 		{
-			"id": "1b5ee8af-c106-495a-8d83-5902737cb042",
+			"id": "90b4811a-c732-4006-935f-84a524a8c3bc",
 			"key": "sfurl",
 			"value": "https://tpmrcgido238-20demo.my.salesforce.com",
 			"type": "string"
