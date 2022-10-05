@@ -182,7 +182,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\n  \"type\": \"BSL\",\n  \"salesorg\": \"0001\",\n  \"volumes\": [\n    {\n      \"year\": 2023,\n      \"week\": 1,\n      \"rows\": [\n        {\n          \"prd\": \"Snow_White\",\n          \"acc\": \"Kroger_Atlanta\",\n          \"value\": 2333\n        }\n      ]\n    }\n  ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -190,7 +190,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{endpoint}}/api/v1/volumes/weeks/week/integer?transaction=BSLFIRST",
+					"raw": "{{endpoint}}/api/v1/volumes/weeks/week/integer?transaction=JOSECDD",
 					"host": [
 						"{{endpoint}}"
 					],
@@ -205,7 +205,7 @@
 					"query": [
 						{
 							"key": "transaction",
-							"value": "BSLFIRST"
+							"value": "JOSECDD"
 						}
 					]
 				}
@@ -285,18 +285,18 @@
 	],
 	"variable": [
 		{
-			"id": "5964039f-0f02-452f-b9a7-190e99315646",
+			"id": "2c029c48-7368-4d57-8206-9b8df4654f31",
 			"key": "endpoint",
 			"value": "https://rcg-integration.industries.sfdc-yfeipo.svc.sfdcfc.net"
 		},
 		{
-			"id": "a7b1c574-2cc9-4b61-a5e5-127fd7f41dfc",
+			"id": "a5c67ba7-71d4-42c3-97a6-6e46b21fca24",
 			"key": "clientid",
 			"value": "3MVG9kBt168mda__rQ54ZBJatzbaZJFW2.iOXoQLO0jA.AZxTN1uhiMcg3tNhQePcDs7BzsKVQeP00qWcRwvZ",
 			"type": "string"
 		},
 		{
-			"id": "f6eaf80e-eae0-4ffe-b348-dc2024893788",
+			"id": "c4960189-74ed-447d-a2bc-c0ff55f70b8e",
 			"key": "sfurl",
 			"value": "https://tpmrcgido238-20demo.my.salesforce.com",
 			"type": "string"
